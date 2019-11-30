@@ -1,0 +1,11 @@
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\bin\Debug\netcoreapp3.0\Generic.Tips.exe
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\bin\Debug\netcoreapp3.0\Generic.Tips.deps.json
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\bin\Debug\netcoreapp3.0\Generic.Tips.runtimeconfig.json
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\bin\Debug\netcoreapp3.0\Generic.Tips.runtimeconfig.dev.json
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\bin\Debug\netcoreapp3.0\Generic.Tips.dll
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\bin\Debug\netcoreapp3.0\Generic.Tips.pdb
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\obj\Debug\netcoreapp3.0\Generic.Tips.csprojAssemblyReference.cache
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\obj\Debug\netcoreapp3.0\Generic.Tips.AssemblyInfoInputs.cache
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\obj\Debug\netcoreapp3.0\Generic.Tips.AssemblyInfo.cs
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\obj\Debug\netcoreapp3.0\Generic.Tips.dll
+C:\Users\salim\source\repos\Generic.Tips\Generic.Tips\obj\Debug\netcoreapp3.0\Generic.Tips.pdb

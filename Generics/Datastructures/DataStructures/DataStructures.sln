@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{E0D27965-78C3-48BA-BA1A-CFEE4C317CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Tests", "DataStructures.Tests\DataStructures.Tests.csproj", "{4496979E-C2FC-488C-816E-DC6F6271B10E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{286C4469-B724-4296-85F8-442BFC531C82}"
+	ProjectSection(SolutionItems) = preProject
+		IBuffer.cs = IBuffer.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0D27965-78C3-48BA-BA1A-CFEE4C317CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D27965-78C3-48BA-BA1A-CFEE4C317CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D27965-78C3-48BA-BA1A-CFEE4C317CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D27965-78C3-48BA-BA1A-CFEE4C317CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4496979E-C2FC-488C-816E-DC6F6271B10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4496979E-C2FC-488C-816E-DC6F6271B10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4496979E-C2FC-488C-816E-DC6F6271B10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4496979E-C2FC-488C-816E-DC6F6271B10E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8911CE6-6F27-423A-B5ED-6F5898205B22}
+	EndGlobalSection
+EndGlobal

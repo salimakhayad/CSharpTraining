@@ -1,0 +1,10 @@
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.exe
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.deps.json
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.runtimeconfig.json
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.runtimeconfig.dev.json
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.dll
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.pdb
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.AssemblyInfoInputs.cache
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.AssemblyInfo.cs
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.dll
+C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.pdb
