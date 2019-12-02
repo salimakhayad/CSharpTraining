@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt.Tests\\ReflectIt.Tests.csproj": {}
+    "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt.Tests\\ReflectIt.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt.Tests\\ReflectIt.Tests.csproj": {
+    "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt.Tests\\ReflectIt.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt.Tests\\ReflectIt.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt.Tests\\ReflectIt.Tests.csproj",
         "projectName": "ReflectIt.Tests",
-        "projectPath": "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt.Tests\\ReflectIt.Tests.csproj",
+        "projectPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt.Tests\\ReflectIt.Tests.csproj",
         "packagesPath": "C:\\Users\\salim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt.Tests\\obj\\",
+        "outputPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt\\ReflectIt.csproj": {
-                "projectPath": "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt\\ReflectIt.csproj"
+              "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt\\ReflectIt.csproj": {
+                "projectPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt\\ReflectIt.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt\\ReflectIt.csproj": {
+    "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt\\ReflectIt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt\\ReflectIt.csproj",
+        "projectUniqueName": "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt\\ReflectIt.csproj",
         "projectName": "ReflectIt",
-        "projectPath": "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt\\ReflectIt.csproj",
+        "projectPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt\\ReflectIt.csproj",
         "packagesPath": "C:\\Users\\salim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salim\\source\\repos\\ReflectIt\\ReflectIt\\obj\\",
+        "outputPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\Generics\\Generic and Reflection - IoC\\ReflectIt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

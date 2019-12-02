@@ -8,3 +8,14 @@ C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectI
 C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.AssemblyInfo.cs
 C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.dll
 C:\Users\salim\source\repos\ReflectIt\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.pdb
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.exe
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.deps.json
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.runtimeconfig.json
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.runtimeconfig.dev.json
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.dll
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\bin\Debug\netcoreapp3.0\ReflectIt.pdb
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.csprojAssemblyReference.cache
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.AssemblyInfoInputs.cache
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.AssemblyInfo.cs
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.dll
+C:\Users\salim\Desktop\CSharpTraining\Generics\Generic and Reflection - IoC\ReflectIt\obj\Debug\netcoreapp3.0\ReflectIt.pdb
