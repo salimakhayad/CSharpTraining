@@ -1,0 +1,11 @@
+C:\Users\salim\source\repos\Introduction\Introduction\bin\Debug\netcoreapp3.0\Introduction.exe
+C:\Users\salim\source\repos\Introduction\Introduction\bin\Debug\netcoreapp3.0\Introduction.deps.json
+C:\Users\salim\source\repos\Introduction\Introduction\bin\Debug\netcoreapp3.0\Introduction.runtimeconfig.json
+C:\Users\salim\source\repos\Introduction\Introduction\bin\Debug\netcoreapp3.0\Introduction.runtimeconfig.dev.json
+C:\Users\salim\source\repos\Introduction\Introduction\bin\Debug\netcoreapp3.0\Introduction.dll
+C:\Users\salim\source\repos\Introduction\Introduction\bin\Debug\netcoreapp3.0\Introduction.pdb
+C:\Users\salim\source\repos\Introduction\Introduction\obj\Debug\netcoreapp3.0\Introduction.csprojAssemblyReference.cache
+C:\Users\salim\source\repos\Introduction\Introduction\obj\Debug\netcoreapp3.0\Introduction.AssemblyInfoInputs.cache
+C:\Users\salim\source\repos\Introduction\Introduction\obj\Debug\netcoreapp3.0\Introduction.AssemblyInfo.cs
+C:\Users\salim\source\repos\Introduction\Introduction\obj\Debug\netcoreapp3.0\Introduction.dll
+C:\Users\salim\source\repos\Introduction\Introduction\obj\Debug\netcoreapp3.0\Introduction.pdb
