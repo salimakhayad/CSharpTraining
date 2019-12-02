@@ -9,3 +9,14 @@ C:\Users\salim\source\repos\Introduction\Features\obj\Debug\netcoreapp3.0\Featur
 C:\Users\salim\source\repos\Introduction\Features\obj\Debug\netcoreapp3.0\Features.AssemblyInfo.cs
 C:\Users\salim\source\repos\Introduction\Features\obj\Debug\netcoreapp3.0\Features.dll
 C:\Users\salim\source\repos\Introduction\Features\obj\Debug\netcoreapp3.0\Features.pdb
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\bin\Debug\netcoreapp3.0\Features.exe
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\bin\Debug\netcoreapp3.0\Features.deps.json
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\bin\Debug\netcoreapp3.0\Features.runtimeconfig.json
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\bin\Debug\netcoreapp3.0\Features.runtimeconfig.dev.json
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\bin\Debug\netcoreapp3.0\Features.dll
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\bin\Debug\netcoreapp3.0\Features.pdb
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\obj\Debug\netcoreapp3.0\Features.csprojAssemblyReference.cache
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\obj\Debug\netcoreapp3.0\Features.AssemblyInfoInputs.cache
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\obj\Debug\netcoreapp3.0\Features.AssemblyInfo.cs
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\obj\Debug\netcoreapp3.0\Features.dll
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Features\obj\Debug\netcoreapp3.0\Features.pdb

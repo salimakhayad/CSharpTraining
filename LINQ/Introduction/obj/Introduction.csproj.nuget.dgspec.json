@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salim\\source\\repos\\Introduction\\Introduction\\Introduction.csproj": {}
+    "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Introduction\\Introduction.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salim\\source\\repos\\Introduction\\Introduction\\Introduction.csproj": {
+    "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Introduction\\Introduction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salim\\source\\repos\\Introduction\\Introduction\\Introduction.csproj",
+        "projectUniqueName": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Introduction\\Introduction.csproj",
         "projectName": "Introduction",
-        "projectPath": "C:\\Users\\salim\\source\\repos\\Introduction\\Introduction\\Introduction.csproj",
+        "projectPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Introduction\\Introduction.csproj",
         "packagesPath": "C:\\Users\\salim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salim\\source\\repos\\Introduction\\Introduction\\obj\\",
+        "outputPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Introduction\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

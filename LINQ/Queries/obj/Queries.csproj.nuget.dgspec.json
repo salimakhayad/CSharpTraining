@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\Features.csproj": {}
+    "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Queries\\Queries.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\Features.csproj": {
+    "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Queries\\Queries.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\Features.csproj",
-        "projectName": "Features",
-        "projectPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\Features.csproj",
+        "projectUniqueName": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Queries\\Queries.csproj",
+        "projectName": "Queries",
+        "projectPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Queries\\Queries.csproj",
         "packagesPath": "C:\\Users\\salim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\obj\\",
+        "outputPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Queries\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

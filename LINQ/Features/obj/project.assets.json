@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salim\\source\\repos\\Introduction\\Features\\Features.csproj",
+      "projectUniqueName": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\Features.csproj",
       "projectName": "Features",
-      "projectPath": "C:\\Users\\salim\\source\\repos\\Introduction\\Features\\Features.csproj",
+      "projectPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\Features.csproj",
       "packagesPath": "C:\\Users\\salim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salim\\source\\repos\\Introduction\\Features\\obj\\",
+      "outputPath": "C:\\Users\\salim\\Desktop\\CSharpTraining\\LINQ\\Features\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,11 @@
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\bin\Debug\netcoreapp3.0\Queries.exe
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\bin\Debug\netcoreapp3.0\Queries.deps.json
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\bin\Debug\netcoreapp3.0\Queries.runtimeconfig.json
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\bin\Debug\netcoreapp3.0\Queries.runtimeconfig.dev.json
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\bin\Debug\netcoreapp3.0\Queries.dll
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\bin\Debug\netcoreapp3.0\Queries.pdb
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\obj\Debug\netcoreapp3.0\Queries.csprojAssemblyReference.cache
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\obj\Debug\netcoreapp3.0\Queries.AssemblyInfoInputs.cache
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\obj\Debug\netcoreapp3.0\Queries.AssemblyInfo.cs
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\obj\Debug\netcoreapp3.0\Queries.dll
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Queries\obj\Debug\netcoreapp3.0\Queries.pdb
