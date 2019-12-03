@@ -8,6 +8,11 @@ namespace Queries
     {
         static void Main(string[] args)
         {
+            var numbers = MyLinq.Random().Where(n => n > 0.5).Take(10);
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
             var movies = new List<Movie>
            {
                 new Movie {Title = "The Dark Knight", Rating = 8.9f,Year = 2008},
@@ -16,20 +21,20 @@ namespace Queries
                 new Movie {Title = "Star Wars V", Rating = 8.7f,Year = 1980}
            };
 
-            var query = movies.Filter(m => m.Year > 2000).ToList();
-                              
-            // query = query.Take(1);
+            //var query = movies.Where(m => m.Year > 2000)
+            //            .OrderByDescending(m => m.Rating);
+            var query = from movie in movies
+                        where movie.Year > 2000
+                        orderby movie.Rating descending
+                        select movie;
 
-            Console.WriteLine(query.Count());
+
             var enumerator = query.GetEnumerator();
             while (enumerator.MoveNext())
             {
                 Console.WriteLine(enumerator.Current.Title);
             }
-           // foreach (var movie in query)
-           // {
-           //     Console.WriteLine(movie.Title);
-           // }
+           
 
         }
     }
