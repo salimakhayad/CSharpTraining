@@ -1,0 +1,6 @@
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Cars\bin\Debug\fuel.csv
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Cars\bin\Debug\Cars.exe
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Cars\bin\Debug\Cars.pdb
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Cars\obj\Debug\Cars.csprojAssemblyReference.cache
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Cars\obj\Debug\Cars.exe
+C:\Users\salim\Desktop\CSharpTraining\LINQ\Cars\obj\Debug\Cars.pdb
