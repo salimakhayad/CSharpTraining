@@ -13,32 +13,257 @@ namespace Cars
         {
             var cars = ProcessCars("fuel.csv");
             var manufacturers = ProcessManufacturers("manufacturers.csv");
-
-            // cars by most fuel efficient 
-            // var query = cars.OrderByDescending(c => c.Combined)
-            //     .ThenBy(c => c.Name);
-
-            var query = from car in cars
-                      orderby car.Combined ascending, car.Name ascending
-                      select car;
-           
-                foreach (var car in query.Take(10))
+            #region More Efficient Aggregation
+            var query =
+                from car in cars
+                group car by car.Manufacturer into carGroup
+                select new
                 {
-                    Console.WriteLine($"{car.Name} : {car.Combined}");
-                }
+                    Name = carGroup.Key,
+                    Max = carGroup.Max(c => c.Combined),
+                    Min = carGroup.Min(c => c.Combined),
+                    Avg = carGroup.Average(c => c.Combined)
+                } into result /**/
+                orderby result.Max descending
+                select result;
+
+
+            var query2 =
+                cars.GroupBy(c => c.Manufacturer)
+                    .Select(g =>
+                    {
+                        var results = g.Aggregate(new CarStatistics(),
+                                           (acc, c) => acc.Accumulate(c),
+                                           acc => acc.Compute());
+                        return new
+                        {
+                            Name = g.Key,
+                            Avg = results.Average,
+                            Min = results.Min,
+                            Max = results.Max
+                        };
+                    })
+                    .OrderByDescending(r => r.Max);
+
+            foreach (var result in query)
+            {
+                Console.WriteLine($"{result.Name}");
+                Console.WriteLine($"\t Max:{result.Max}");
+                Console.WriteLine($"\t Min:{result.Min}");
+                Console.WriteLine($"\t Avg:{result.Avg}");
+
+
+            }
+
+            #endregion
+            #region Aggregation
+
+
+            //  var query =
+            //      from car in cars
+            //      group car by car.Manufacturer into carGroup
+            //      select new
+            //      {
+            //          Name = carGroup.Key,
+            //          Max = carGroup.Max(c => c.Combined),
+            //          Min = carGroup.Min(c => c.Combined),
+            //          Avg = carGroup.Average(c => c.Combined)
+            //      } into result /**/
+            //      orderby result.Max descending
+            //      select result;
+            //  
+            //
+            //  // extensionmethod Syntax vs Sql Syntax
+            //
+            //  var query2 =
+            //      manufacturers.GroupJoin(cars, m => m.Name, c => c.Manufacturer, (m, g) =>
+            //            new
+            //            {
+            //                Manufacturer = m,
+            //                Cars = g
+            //            })
+            //      .GroupBy(m => m.Manufacturer.Headquarters)
+            //      .Take(3);
+            //
+            //  foreach (var result in query)
+            //  {
+            //      Console.WriteLine($"{result.Name}");
+            //      Console.WriteLine($"\t Max:{result.Max}");
+            //      Console.WriteLine($"\t Min:{result.Min}");
+            //      Console.WriteLine($"\t Avg:{result.Avg}");
+            //
+            //
+            //  }
+            //
+            #endregion
+
+            #region top 3 efficient cars per Manufacturer
+            // var query =
+            //     from manufacturer in manufacturers
+            //     join car in cars on manufacturer.Name equals car.Manufacturer
+            //     into carGroup
+            //     orderby manufacturer.Name
+            //     select new
+            //     {
+            //         Manufacturer = manufacturer,
+            //         Cars = carGroup
+            //     } into result
+            //     group result by result.Manufacturer.Headquarters;
+            //
+            //
+            // // extensionmethod Syntax vs Sql Syntax
+            //
+            // var query2 =
+            //     manufacturers.GroupJoin(cars, m => m.Name, c => c.Manufacturer, (m, g) =>
+            //           new
+            //           {
+            //               Manufacturer = m,
+            //               Cars = g
+            //           })
+            //     .GroupBy(m => m.Manufacturer.Headquarters)
+            //     .Take(3);
+            #endregion
+            #region grouping Data Manufacturer - Country
+
+
+            // 
+            // var query =
+            //     from manufacturer in manufacturers
+            //     join car in cars on manufacturer.Name equals car.Manufacturer
+            //     into carGroup
+            //     select new
+            //     {
+            //         Manufacturer = manufacturer,
+            //         Cars = carGroup
+            //     };
+            // 
+            // 
+            // 
+            //         // var query =
+            //         //     from car in cars
+            //         //     group car by car.Manufacturer.ToUpper() into manufacturer
+            //         //     orderby manufacturer.Key
+            //         //     select manufacturer;
+            // 
+            //         // - Group Query
+            //         // var v2query =
+            //         //     cars.GroupBy(c => c.Manufacturer.ToUpper())
+            //         //     .OrderBy(g => g.Key);
+            // 
+            //  foreach (var group in query)
+            // {
+            //     Console.WriteLine($"{group.Key}");
+            //     foreach (var car in group.SelectMany(g=>g.Cars)
+            //          .OrderByDescending(c => c.Combined).Take(3))
+            //     {
+            //         Console.WriteLine($"\t{car.Name}:{car.Combined}");
+            //     }
+            // }
+
+
+            #endregion
+            #region grouping Data 
+
+            //   var cars = ProcessCars("fuel.csv");
+            //   var manufacturers = ProcessManufacturers("manufacturers.csv");
+            // 
+            //   var query =
+            //       from car in cars
+            //       group car by car.Manufacturer;
+
+            #endregion - Manufacturer
+
+            // ex: Tesla has 5 cars etc
+            // foreach (var result in query)
+            // {
+            //     Console.WriteLine($"{result.Key} has {result.Count()} cars");
+            //     // Key Property represents @ what u grouped on
+            // }
+
+            #region Anonymous Types queries
+            //  var query = from car in cars
+            //                  // where car.Manufacturer == "BMW" && car.Year == 2016
+            //              join manufacturer in manufacturers
+            //                  on new { car.Manufacturer, car.Year } 
+            //                  equals 
+            //                  new { Manufacturer = manufacturer.Name, manufacturer.Year }
+            //              orderby car.Combined descending, car.Name ascending
+            //              select new
+            //              {
+            //                  manufacturer.Headquarters,
+            //                  car.Name,
+            //                  car.Combined
+            //              };
+            //  
+            //  var query2 = cars.Join(manufacturers,
+            //      /*outer key selector -
+            //       - Lambda expressions always single character*/
+            //                             c => new { c.Manufacturer, c.Year },
+            //                             m => new { Manufacturer = m.Name, m.Year }, 
+            //                             (c, m) => new
+            //                             {
+            //                                 m.Headquarters,
+            //                                 c.Name,
+            //                                 c.Combined
+            //                             })
+            //                      .OrderByDescending(c => c.Combined)
+            //                      .ThenBy(c => c.Name)
+            //                      .Select(c => new
+            //                      {
+            //                          c.Headquarters,
+            //                          c.Name,
+            //                          c.Combined
+            //                      });
+            //                       //.Select(c => new
+            //                       //{
+            //                       //  c.Manufacturer.Headquarters,
+            //                       //c.Car.Name,
+            //                       //c.Car.Combined
+            //                       //});
+            // 
+            // 
+            //  var top = cars
+            //                  .OrderByDescending(c => c.Combined)
+            //                  .ThenBy(c => c.Name)
+            //                  .Select(c => c)
+            //                  .First();
+            #endregion
+            #region Projection Operators
+            //  var result = cars.Select(c => new { c.Manufacturer, c.Name, c.Combined });
+            //
+            //  var InnerResult = cars.SelectMany(c => c.Name)
+            //                      .OrderBy(c => c);
+            //  #endregion
+
+            // foreach (var character in result)
+            // {
+            //     Console.WriteLine(character);
+            // }
+
+            // Console.WriteLine(result);
+
+            // foreach (var car in query2.Take(10))
+            // {
+            //     Console.WriteLine($"{car.Headquarters} {car.Name} : {car.Combined}");
+            // }
+            #endregion
+
             Console.ReadLine();
         }
-        
+
         private static List<Car> ProcessCars(string path)
         {
-            return File.ReadAllLines(path)
-                    .Skip(1) // avoid headerline
-                    .Where(l => l.Length > 1)
-                    .Select(Car.ParseFromCsv)
-                    .ToList();
-                     // maps to car
+            var query =
 
-            
+              File.ReadAllLines(path)
+                  .Skip(1)
+                  .Where(l => l.Length > 1)
+                  .ToCar();
+
+            return query.ToList();
+            // maps to car
+
+
         }
 
         private static List<Manufacturer> ProcessManufacturers(string path)
@@ -59,15 +284,45 @@ namespace Cars
             return query.ToList();
         }
     }
+    public class CarStatistics
+    {
 
+        public CarStatistics()
+        {
+            Max = Int32.MinValue;
+            Min = Int32.MaxValue;
+        }
+        public CarStatistics Accumulate(Car car)
+        {
+           Count += 1;
+           Total+= car.Combined;
+            Math.Max(Max, car.Combined);
+            Math.Min(Min, car.Combined);
+
+            return this;
+        }
+
+        public CarStatistics Compute()
+        {
+            Average = Total / Count;
+            return this;
+        }
+
+        public int Max { get; set; }
+        public int Min { get; set; }
+        public int Total { get; set; }
+        public int Count { get; set; }
+        public double Average { get; set; }
+    }
     public static class CarExtensions
-    {        
+    {
         public static IEnumerable<Car> ToCar(this IEnumerable<string> source)
         {
             foreach (var line in source)
             {
                 var columns = line.Split(',');
 
+                // projection with deferred execution
                 yield return new Car
                 {
                     Year = int.Parse(columns[0]),
