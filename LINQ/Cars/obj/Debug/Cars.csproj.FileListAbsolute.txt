@@ -10,3 +10,15 @@ C:\Users\Gamer Beastplus\Source\Repos\CSharpTraining\LINQ\Cars\bin\Debug\Cars.pd
 C:\Users\Gamer Beastplus\Source\Repos\CSharpTraining\LINQ\Cars\obj\Debug\Cars.csprojAssemblyReference.cache
 C:\Users\Gamer Beastplus\Source\Repos\CSharpTraining\LINQ\Cars\obj\Debug\Cars.exe
 C:\Users\Gamer Beastplus\Source\Repos\CSharpTraining\LINQ\Cars\obj\Debug\Cars.pdb
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\fuel.csv
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\Cars.exe
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\Cars.pdb
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\obj\Debug\Cars.exe
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\obj\Debug\Cars.pdb
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\obj\Debug\Cars.csprojAssemblyReference.cache
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\Cars.exe.config
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\EntityFramework.dll
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\EntityFramework.xml
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\salim\Documents\CSharpTraining\LINQ\Cars\obj\Debug\Cars.csproj.CopyComplete
