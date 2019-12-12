@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,15 +27,25 @@ namespace OdeToFood
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextPool<OdeToFoodDbContext>(options =>
-            {
-                //.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); OdeToFoodDb
-                options.UseSqlServer(Configuration.GetConnectionString("OdeToFoodDb"));
-            });
-            services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
 
+            services.AddDbContextPool<OdeToFoodDbContext>(options =>
+                {
+                    options.UseSqlServer(Configuration.GetConnectionString("OdeToFoodDb"));
+                 });
             
-            services.AddRazorPages();
+            services.AddScoped<IRestaurantData, SqlRestaurantData>();
+
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,9 +64,10 @@ namespace OdeToFood
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseCookiePolicy();
 
             app.UseRouting();
-
+          
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

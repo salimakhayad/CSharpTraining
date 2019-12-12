@@ -26,8 +26,6 @@ namespace OdeToFood.Pages.Restaurants
             this.config = config;
             this.restaurantData = restaurantData;
         }
-
-        //public List<Restaurant> Restaurants { get; set; }
         public void OnGet()
         {
             Message = config["Message"];
