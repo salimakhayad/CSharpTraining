@@ -65,14 +65,16 @@ namespace OdeToFood
                 app.UseHsts();
             }
 
+            app.Use(SayHelloMiddleWare);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseNodeModules();
             app.UseCookiePolicy();
-
             app.UseRouting();
-          
+
+            
+
             app.UseAuthorization();
             
             app.UseEndpoints(e =>
@@ -81,6 +83,22 @@ namespace OdeToFood
                 e.MapControllers();
             });
 
+
+        }
+        
+        private RequestDelegate SayHelloMiddleWare(RequestDelegate next)
+        {
+            return async ctx =>
+            {
+                if (ctx.Request.Path.StartsWithSegments("/hello"))
+                {
+                    await ctx.Response.WriteAsync("Hello, World!");
+                }
+                else
+                {
+                    await next(ctx);
+                }
+            };
         }
     }
 }
