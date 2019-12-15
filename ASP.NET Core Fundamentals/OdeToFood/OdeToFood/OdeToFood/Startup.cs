@@ -42,7 +42,10 @@ namespace OdeToFood
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-            
+
+            services.AddRazorPages();
+            services.AddControllers();
+
 
 
 
@@ -64,16 +67,20 @@ namespace OdeToFood
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseNodeModules();
             app.UseCookiePolicy();
 
             app.UseRouting();
           
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            
+            app.UseEndpoints(e =>
             {
-                endpoints.MapRazorPages();
+                e.MapRazorPages();
+                e.MapControllers();
             });
+
         }
     }
 }
